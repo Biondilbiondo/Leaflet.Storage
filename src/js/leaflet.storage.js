@@ -1092,6 +1092,7 @@ L.Storage.Map.include({
                 this.once('saved', function () {
                     this.isDirty = false;
                     this.ui.alert({content: msg, level: 'info', duration: duration});
+                    location.reload(true);
                 });
                 this.ui.closePanel();
                 this.continueSaving();
